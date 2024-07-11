@@ -135,4 +135,16 @@
 	--transition-timing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 	--transition-timing-ease-in: cubic-bezier(0.4, 0, 1, 1);
 	--transition-timing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+	--form-input-height: 3rem;
+  --form-input-border-radius: var(--border-radius-base);
+  --form-input-border-color: var(--color-secondary-300);
+  --form-input-focus-border-color: var(--color-primary-500);
+  --form-input-focus-shadow-color: rgba(180, 128, 128, 0.2);
+  --form-input-error-border-color: var(--color-error-500);
+  --form-input-error-focus-shadow-color: rgba(244, 67, 54, 0.2);
+  --form-label-color: var(--color-secondary-700);
+  --form-helper-color: var(--color-secondary-500);
+  --form-error-color: var(--color-error-500);
+  --form-placeholder-color: var(--color-secondary-400);
 }

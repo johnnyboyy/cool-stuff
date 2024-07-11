@@ -1,5 +1,6 @@
 import { createSession, signIn, signOut } from "@solid-mediakit/auth/client";
 import { Show, createSignal } from "solid-js";
+import { UncontrolledField } from "~/components/Field";
 
 export default function Home() {
 	const session = createSession();
@@ -14,6 +15,7 @@ export default function Home() {
 					<>
 						<span>You are not signed in.</span>
 						<form
+							class="standard"
 							onSubmit={async (event: Event) => {
 								event.preventDefault();
 								const formData = new FormData(event.target as HTMLFormElement);
@@ -22,7 +24,7 @@ export default function Home() {
 
 								setIsEmailSent(true);
 							}}>
-							<input type="text" name="email" placeholder="Email" />
+							<UncontrolledField name="email" label="Email" helperText="Enter your email" />
 							<button type="submit">Signin with Resend</button>
 						</form>
 					</>
