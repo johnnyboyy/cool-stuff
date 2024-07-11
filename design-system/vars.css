@@ -1,0 +1,138 @@
+:root {
+	/* Colors */
+	--color-primary-100: #f0e6e6;
+	--color-primary-200: #e1cccc;
+	--color-primary-300: #d2b3b3;
+	--color-primary-400: #c39999;
+	--color-primary-500: #b48080;
+	--color-primary-600: #a56666;
+	--color-primary-700: #964d4d;
+	--color-primary-800: #873333;
+	--color-primary-900: #781a1a;
+
+	--color-secondary-100: #e6e8e9;
+	--color-secondary-200: #ccd1d3;
+	--color-secondary-300: #b3babd;
+	--color-secondary-400: #99a3a7;
+	--color-secondary-500: #808c91;
+	--color-secondary-600: #66757a;
+	--color-secondary-700: #4d5e64;
+	--color-secondary-800: #33474e;
+	--color-secondary-900: #1a3038;
+
+	--color-accent-gold: #d4af37;
+	--color-accent-silver: #c0c0c0;
+	--color-accent-rose-gold: #b76e79;
+
+	--color-success-100: #e6f3e6;
+	--color-success-500: #4caf50;
+	--color-success-900: #1b5e20;
+
+	--color-warning-100: #fff8e1;
+	--color-warning-500: #ffc107;
+	--color-warning-900: #ff6f00;
+
+	--color-error-100: #ffebee;
+	--color-error-500: #f44336;
+	--color-error-900: #b71c1c;
+
+	--color-neutral-white: #ffffff;
+	--color-neutral-black: #000000;
+
+	/* Typography */
+	--font-family-sans: "Cormorant Garamond", "Playfair Display", serif;
+	--font-family-serif: "Libre Baskerville", "Baskerville", serif;
+	--font-family-mono: "Roboto Mono", monospace;
+
+	--font-size-xs: 0.75rem;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-lg: 1.125rem;
+	--font-size-xl: 1.25rem;
+	--font-size-2xl: 1.5rem;
+	--font-size-3xl: 1.875rem;
+	--font-size-4xl: 2.25rem;
+	--font-size-5xl: 3rem;
+
+	--font-weight-light: 300;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+
+	--line-height-tight: 1.2;
+	--line-height-snug: 1.33;
+	--line-height-normal: 1.5;
+	--line-height-relaxed: 1.75;
+	--line-height-loose: 2;
+
+	/* Spacing */
+	--spacing-px: 1px;
+	--spacing-0: 0;
+	--spacing-0-5: 0.125rem;
+	--spacing-1: 0.25rem;
+	--spacing-1-5: 0.375rem;
+	--spacing-2: 0.5rem;
+	--spacing-2-5: 0.625rem;
+	--spacing-3: 0.75rem;
+	--spacing-3-5: 0.875rem;
+	--spacing-4: 1rem;
+	--spacing-5: 1.25rem;
+	--spacing-6: 1.5rem;
+	--spacing-7: 1.75rem;
+	--spacing-8: 2rem;
+	--spacing-9: 2.25rem;
+	--spacing-10: 2.5rem;
+	--spacing-12: 3rem;
+	--spacing-14: 3.5rem;
+	--spacing-16: 4rem;
+	--spacing-20: 5rem;
+	--spacing-24: 6rem;
+	--spacing-28: 7rem;
+	--spacing-32: 8rem;
+	--spacing-36: 9rem;
+	--spacing-40: 10rem;
+
+	/* Borders */
+	--border-width-thin: 1px;
+	--border-width-medium: 2px;
+	--border-width-thick: 4px;
+
+	--border-radius-none: 0;
+	--border-radius-sm: 0.125rem;
+	--border-radius-base: 0.25rem;
+	--border-radius-md: 0.375rem;
+	--border-radius-lg: 0.5rem;
+	--border-radius-xl: 0.75rem;
+	--border-radius-2xl: 1rem;
+	--border-radius-3xl: 1.5rem;
+	--border-radius-full: 9999px;
+
+	/* Shadows */
+	--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	--shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	--shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	--shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+	/* Typography-specific */
+	--letter-spacing-tight: -0.025em;
+	--letter-spacing-normal: 0em;
+	--letter-spacing-wide: 0.025em;
+
+	--text-color-base: var(--color-secondary-900);
+	--text-color-muted: var(--color-secondary-600);
+	--text-color-inverted: var(--color-neutral-white);
+
+	/* Transitions */
+	--transition-property-common: background-color, border-color, color, fill, stroke, opacity,
+		box-shadow, transform;
+	--transition-duration-fast: 150ms;
+	--transition-duration-normal: 200ms;
+	--transition-duration-slow: 300ms;
+	--transition-timing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+	--transition-timing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+	--transition-timing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+}

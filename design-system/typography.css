@@ -1,0 +1,120 @@
+/* Base typography styles */
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--text-color-base);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: var(--spacing-4);
+}
+
+/* Links */
+a {
+  color: var(--color-primary-600);
+  text-decoration: underline;
+  transition: color var(--transition-duration-fast) var(--transition-timing-ease-in-out);
+}
+
+a:hover {
+  color: var(--color-primary-700);
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: var(--spacing-4);
+  padding-left: var(--spacing-8);
+}
+
+li {
+  margin-bottom: var(--spacing-2);
+}
+
+/* Blockquotes */
+blockquote {
+  margin: var(--spacing-6) 0;
+  padding: var(--spacing-4) var(--spacing-6);
+  border-left: var(--border-width-thick) solid var(--color-primary-300);
+  background-color: var(--color-secondary-100);
+  font-style: italic;
+  color: var(--text-color-muted);
+}
+
+/* Code */
+code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-1) var(--spacing-2);
+  background-color: var(--color-secondary-100);
+  border-radius: var(--border-radius-sm);
+}
+
+pre {
+  margin-bottom: var(--spacing-4);
+  padding: var(--spacing-4);
+  background-color: var(--color-secondary-100);
+  border-radius: var(--border-radius-base);
+  overflow-x: auto;
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Small text */
+small {
+  font-size: var(--font-size-sm);
+  color: var(--text-color-muted);
+}
+
+/* Strong text */
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Emphasis */
+em {
+  font-style: italic;
+}
+
+/* Horizontal rule */
+hr {
+  margin: var(--spacing-8) 0;
+  border: 0;
+  border-top: var(--border-width-thin) solid var(--color-secondary-300);
+}
