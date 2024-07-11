@@ -3,8 +3,7 @@ import { redirect } from "@solidjs/router";
 import { useSession } from "vinxi/http";
 import { eq } from "drizzle-orm";
 
-import { db } from "./db";
-import { Users } from "@/schema";
+import { Users, db } from "@/schema";
 
 async function login(email: string) {
 	const user = db.select().from(Users).where(eq(Users.email, email)).get();
