@@ -1,7 +1,10 @@
 import { createSignal } from "solid-js";
+import { createAsync } from "@solidjs/router";
+import { api } from "~/lib/api";
 
 function Index() {
 	const [count, setCount] = createSignal(0);
+	const hello = createAsync(() => api.example.hello.query("world"));
 
 	return (
 		<>
@@ -21,6 +24,9 @@ function Index() {
 				</a>{" "}
 				to learn how to build SolidStart apps.
 			</p>
+			<pre>
+				<code>{JSON.stringify(hello(), null, 2)}</code>
+			</pre>
 		</>
 	);
 }

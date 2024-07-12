@@ -18,10 +18,14 @@
 		"@solidjs/meta": "^0.29.4",
 		"@solidjs/router": "^0.14.1",
 		"@solidjs/start": "^1.0.3",
+		"@trpc/client": "^10.45.2",
+		"@trpc/server": "^10.45.2",
+		"@typeschema/valibot": "^0.13.5",
 		"better-sqlite3": "^11.1.2",
 		"drizzle-orm": "^0.32.0",
 		"lucide-solid": "^0.408.0",
 		"solid-js": "^1.8.18",
+		"valibot": "^0.36.0",
 		"vinxi": "^0.3.14"
 	},
 	"engines": {
