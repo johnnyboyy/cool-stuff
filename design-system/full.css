@@ -1,5 +1,7 @@
 @import "./vars.css";
+@import "./animations.css";
 @import "./reset.css";
 @import "./typography.css";
 @import "./button.css";
 @import "./form.css";
+@import "./menu.css";

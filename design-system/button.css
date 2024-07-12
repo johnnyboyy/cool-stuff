@@ -1,4 +1,4 @@
-button {
+button:not(.unstyled), .button {
 	background-color: var(--color-primary-500);
 	color: var(--color-neutral-white);
 	padding: var(--spacing-3) var(--spacing-6);
@@ -82,4 +82,18 @@ button {
 		padding: var(--spacing-4) var(--spacing-8);
 		font-size: var(--font-size-lg);
 	}
+}
+
+button.unstyled {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }

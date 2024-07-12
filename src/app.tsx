@@ -4,6 +4,7 @@ import { MetaProvider, Title } from "@solidjs/meta";
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
+import { Header } from "./components/Header";
 import "./app.css";
 
 export default function App() {
@@ -12,10 +13,11 @@ export default function App() {
 			root={(props) => (
 				<MetaProvider>
 					<Title>SolidStart - Basic</Title>
-					<a href="/">Index</a>
-					<a href="/protected">Protected</a>
 					<Suspense>
-						<SessionProvider>{props.children}</SessionProvider>
+						<SessionProvider>
+							<Header />
+							<main>{props.children}</main>
+						</SessionProvider>
 					</Suspense>
 				</MetaProvider>
 			)}>

@@ -4,7 +4,7 @@ function Index() {
 	const [count, setCount] = createSignal(0);
 
 	return (
-		<main>
+		<>
 			<h1>Hello world!</h1>
 			<button
 				class="increment"
@@ -21,7 +21,7 @@ function Index() {
 				</a>{" "}
 				to learn how to build SolidStart apps.
 			</p>
-		</main>
+		</>
 	);
 }
 

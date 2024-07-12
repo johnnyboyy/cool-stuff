@@ -23,34 +23,6 @@ body {
 	background-color: var(--color-neutral-white);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height-tight);
-}
-
-p {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-
-a {
-	color: var(--color-primary-600);
-	text-decoration: none;
-	background-color: transparent;
-}
-
-a:hover {
-	color: var(--color-primary-800);
-	text-decoration: underline;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
