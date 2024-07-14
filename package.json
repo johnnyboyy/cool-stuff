@@ -18,20 +18,24 @@
 		"@solidjs/meta": "^0.29.4",
 		"@solidjs/router": "^0.14.1",
 		"@solidjs/start": "^1.0.3",
+		"@tanstack/solid-query": "^5.51.2",
 		"@trpc/client": "^10.45.2",
 		"@trpc/server": "^10.45.2",
 		"@typeschema/valibot": "^0.13.5",
 		"better-sqlite3": "^11.1.2",
 		"drizzle-orm": "^0.32.0",
+		"drizzle-valibot": "^0.2.0",
 		"lucide-solid": "^0.408.0",
 		"solid-js": "^1.8.18",
-		"valibot": "^0.36.0",
+		"valibot": "^0.30.0",
 		"vinxi": "^0.3.14"
 	},
 	"engines": {
 		"node": ">=18"
 	},
 	"devDependencies": {
+		"@types/better-sqlite3": "^7.6.11",
+		"@types/node": "^20.14.10",
 		"drizzle-kit": "^0.23.0"
 	}
 }

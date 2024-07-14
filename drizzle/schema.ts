@@ -1,10 +1,8 @@
+import { sql } from "drizzle-orm";
 import { integer, sqliteTable, text, primaryKey } from "drizzle-orm/sqlite-core";
+import { createInsertSchema, createSelectSchema } from "drizzle-valibot";
+import { string, object, number, union } from "valibot";
 import type { AdapterAccountType } from "@auth/core/adapters";
-
-export const Users = sqliteTable("users", {
-	id: integer("id").primaryKey().unique().notNull(),
-	email: text("email").unique().notNull(),
-});
 
 export const users = sqliteTable("user", {
 	id: text("id")
@@ -15,6 +13,8 @@ export const users = sqliteTable("user", {
 	emailVerified: integer("emailVerified", { mode: "timestamp_ms" }),
 	image: text("image"),
 });
+export const selectUserSchema = createSelectSchema(users);
+export const insertUserSchema = createInsertSchema(users);
 
 export const accounts = sqliteTable(
 	"account",
@@ -84,3 +84,27 @@ export const authenticators = sqliteTable(
 		}),
 	})
 );
+
+export const userProfiles = sqliteTable("user_profiles", {
+	id: integer("id").primaryKey(),
+	userId: text("userId")
+		.notNull()
+		.references(() => users.id, { onDelete: "cascade" }),
+	displayName: text("display_name"),
+	bio: text("bio"),
+	location: text("location"),
+	website: text("website"),
+	avatarUrl: text("avatar_url"),
+	createdAt: integer("created_at", { mode: "timestamp" })
+		.notNull()
+		.default(sql`CURRENT_TIMESTAMP`),
+	updatedAt: integer("updated_at", { mode: "timestamp" })
+		.notNull()
+		.default(sql`CURRENT_TIMESTAMP`),
+});
+
+export const selectUserProfileSchema = union([
+	object({ id: number() }),
+	object({ userId: string() }),
+]);
+export const insertUserProfileSchema = createInsertSchema(userProfiles);

@@ -5,6 +5,8 @@ import { api } from "~/lib/api";
 function Index() {
 	const [count, setCount] = createSignal(0);
 	const hello = createAsync(() => api.example.hello.query("world"));
+	// const profile = createAsync(() => api.userProfile.getCurrentUserProfile.query());
+	
 
 	return (
 		<>
@@ -26,6 +28,7 @@ function Index() {
 			</p>
 			<pre>
 				<code>{JSON.stringify(hello(), null, 2)}</code>
+				{/* <code>{JSON.stringify(profile(), null, 2)}</code> */}
 			</pre>
 		</>
 	);
