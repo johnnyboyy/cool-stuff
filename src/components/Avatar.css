@@ -18,8 +18,8 @@
 	font-size: 14px;
 	line-height: 1;
 	font-weight: 600;
-	color: white;
-	background-color: #777;
+	color: var(--color-secondary-100);
+	background-color: var(--color-primary-900);
 }
 
 [data-scope="avatar"][data-part="fallback"]:not([hidden]) {

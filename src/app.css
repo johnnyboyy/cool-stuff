@@ -1,6 +1,5 @@
 @import "../design-system/full.css";
 
-main {
-	padding: 0 1em;
-	margin: 0 auto;
+html body {
+	background-color: var(--color-primary-100);
 }

@@ -1,47 +1,38 @@
 :root {
-	/* Colors */
-	--color-primary-100: #f0e6e6;
-	--color-primary-200: #e1cccc;
-	--color-primary-300: #d2b3b3;
-	--color-primary-400: #c39999;
-	--color-primary-500: #b48080;
-	--color-primary-600: #a56666;
-	--color-primary-700: #964d4d;
-	--color-primary-800: #873333;
-	--color-primary-900: #781a1a;
+	/* Primary Colors */
+	--color-primary-100: #e6f2ff;
+	--color-primary-200: #cce5ff;
+	--color-primary-300: #b3d9ff;
+	--color-primary-400: #99ccff;
+	--color-primary-500: #80bfff;
+	--color-primary-600: #66b2ff;
+	--color-primary-700: #4da6ff;
+	--color-primary-800: #3399ff;
+	--color-primary-900: #1a8cff;
 
-	--color-secondary-100: #e6e8e9;
-	--color-secondary-200: #ccd1d3;
-	--color-secondary-300: #b3babd;
-	--color-secondary-400: #99a3a7;
-	--color-secondary-500: #808c91;
-	--color-secondary-600: #66757a;
-	--color-secondary-700: #4d5e64;
-	--color-secondary-800: #33474e;
-	--color-secondary-900: #1a3038;
+	/* Secondary Colors */
+	--color-secondary-100: #fff3e6;
+	--color-secondary-200: #ffe6cc;
+	--color-secondary-300: #ffd9b3;
+	--color-secondary-400: #ffcc99;
+	--color-secondary-500: #ffbf80;
+	--color-secondary-600: #ffb266;
+	--color-secondary-700: #ffa64d;
+	--color-secondary-800: #ff9933;
+	--color-secondary-900: #ff8c19;
 
-	--color-accent-gold: #d4af37;
-	--color-accent-silver: #c0c0c0;
-	--color-accent-rose-gold: #b76e79;
+	/* Accent Colors */
+	--color-accent-mint: #73e0c2;
+	--color-accent-lavender: #b994ff;
+	--color-accent-peach: #ffb3ba;
 
-	--color-success-100: #e6f3e6;
-	--color-success-500: #4caf50;
-	--color-success-900: #1b5e20;
-
-	--color-warning-100: #fff8e1;
-	--color-warning-500: #ffc107;
-	--color-warning-900: #ff6f00;
-
-	--color-error-100: #ffebee;
-	--color-error-500: #f44336;
-	--color-error-900: #b71c1c;
-
+	/* Neutral Colors */
 	--color-neutral-white: #ffffff;
-	--color-neutral-black: #000000;
+	--color-neutral-black: #222222;
 
 	/* Typography */
-	--font-family-sans: "Cormorant Garamond", "Playfair Display", serif;
-	--font-family-serif: "Libre Baskerville", "Baskerville", serif;
+	--font-family-primary: "Merriweather", serif;
+	--font-family-secondary: "Lato", sans-serif;
 	--font-family-mono: "Roboto Mono", monospace;
 
 	--font-size-xs: 0.75rem;
@@ -137,14 +128,14 @@
 	--transition-timing-ease-out: cubic-bezier(0, 0, 0.2, 1);
 
 	--form-input-height: 3rem;
-  --form-input-border-radius: var(--border-radius-base);
-  --form-input-border-color: var(--color-secondary-300);
-  --form-input-focus-border-color: var(--color-primary-500);
-  --form-input-focus-shadow-color: rgba(180, 128, 128, 0.2);
-  --form-input-error-border-color: var(--color-error-500);
-  --form-input-error-focus-shadow-color: rgba(244, 67, 54, 0.2);
-  --form-label-color: var(--color-secondary-700);
-  --form-helper-color: var(--color-secondary-500);
-  --form-error-color: var(--color-error-500);
-  --form-placeholder-color: var(--color-secondary-400);
+	--form-input-border-radius: var(--border-radius-base);
+	--form-input-border-color: var(--color-secondary-300);
+	--form-input-focus-border-color: var(--color-primary-500);
+	--form-input-focus-shadow-color: rgba(180, 128, 128, 0.2);
+	--form-input-error-border-color: var(--color-error-500);
+	--form-input-error-focus-shadow-color: rgba(244, 67, 54, 0.2);
+	--form-label-color: var(--color-secondary-700);
+	--form-helper-color: var(--color-secondary-500);
+	--form-error-color: var(--color-error-500);
+	--form-placeholder-color: var(--color-secondary-400);
 }

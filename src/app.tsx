@@ -5,6 +5,7 @@ import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 import { Header } from "./components/Header";
+import { Content } from "./components/Content";
 import "./app.css";
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
 					<Suspense>
 						<SessionProvider>
 							<Header />
-							<main>{props.children}</main>
+							<Content>{props.children}</Content>
 						</SessionProvider>
 					</Suspense>
 				</MetaProvider>
