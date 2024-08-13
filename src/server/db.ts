@@ -1,6 +1,8 @@
-import { drizzle, BetterSQLite3Database } from "drizzle-orm/better-sqlite3";
-import Database from "better-sqlite3";
+import PG from "pg";
 
-const sqlite = new Database("./drizzle/db.sqlite");
-
-export const db: BetterSQLite3Database = drizzle(sqlite);
+export const pool = new PG.Pool({
+	connectionString: process.env.DATABASE_URL,
+	max: 20,
+	idleTimeoutMillis: 30000,
+	connectionTimeoutMillis: 2000,
+});

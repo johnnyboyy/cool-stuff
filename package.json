@@ -5,33 +5,37 @@
 		"dev": "vinxi dev",
 		"build": "vinxi build",
 		"start": "vinxi start",
+		"docker:start-postgres": "bin/docker:start-postgres.sh",
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate"
 	},
 	"dependencies": {
 		"@ark-ui/solid": "^3.5.0",
-		"@auth/core": "^0.34.1",
-		"@auth/drizzle-adapter": "^1.4.1",
+		"@auth/core": "^0.34.2",
+		"@auth/drizzle-adapter": "^1.4.2",
+		"@auth/pg-adapter": "^1.4.2",
 		"@simplewebauthn/browser": "9.0.1",
 		"@simplewebauthn/server": "9.0.3",
-		"@solid-mediakit/auth": "^2.0.12",
+		"@solid-mediakit/auth": "^2.1.2",
 		"@solidjs/meta": "^0.29.4",
 		"@solidjs/router": "^0.14.1",
 		"@solidjs/start": "^1.0.3",
 		"@trpc/client": "^10.45.2",
 		"@trpc/server": "^10.45.2",
 		"@typeschema/valibot": "^0.13.5",
-		"better-sqlite3": "^11.1.2",
-		"drizzle-orm": "^0.32.0",
+		"drizzle-orm": "^0.33.0",
+		"drizzle-valibot": "^0.2.0",
 		"lucide-solid": "^0.408.0",
+		"pg": "^8.12.0",
 		"solid-js": "^1.8.18",
-		"valibot": "^0.36.0",
+		"valibot": "^0.37.0",
 		"vinxi": "^0.3.14"
 	},
 	"engines": {
 		"node": ">=18"
 	},
 	"devDependencies": {
+		"@types/pg": "^8.11.6",
 		"drizzle-kit": "^0.23.0"
 	}
 }

@@ -1,10 +1,10 @@
 import Resend from "@auth/core/providers/resend";
-import { DrizzleAdapter } from "@auth/drizzle-adapter";
-import type { SolidAuthConfig } from "@solid-mediakit/auth/src/index";
+import PostgresAdapter from "@auth/pg-adapter";
+import type { SolidAuthConfig } from "@solid-mediakit/auth";
 
-import { db } from "./db";
+import { pool } from "./db";
 
 export const authOptions: SolidAuthConfig = {
-	adapter: DrizzleAdapter(db),
+	adapter: PostgresAdapter(pool),
 	providers: [Resend({ from: "no-reply@johnzdanis.com" })],
 };

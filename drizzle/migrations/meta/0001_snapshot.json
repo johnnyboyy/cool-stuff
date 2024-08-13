@@ -1,6 +1,6 @@
 {
-  "id": "4d4645e8-8722-4a67-9682-3a118f24101e",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "101d76c9-0afd-4711-b997-a4cfafc0f1b4",
+  "prevId": "4d4645e8-8722-4a67-9682-3a118f24101e",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -188,8 +188,8 @@
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
-    "public.verificationToken": {
-      "name": "verificationToken",
+    "public.verification_token": {
+      "name": "verification_token",
       "schema": "",
       "columns": {
         "identifier": {

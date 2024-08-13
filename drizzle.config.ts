@@ -1,9 +1,10 @@
-export default {
-  dialect: "sqlite",
-  schema: "./drizzle/schema.ts",
-  out: "./drizzle/migrations/",
-  // driver: "better-sqlite",
-  dbCredentials: {
-    url: './drizzle/db.sqlite',
-  },
-};
+import { defineConfig } from "drizzle-kit";
+
+const url = process.env.DATABASE_URL || "postgres://postgres:postgres@localhost:5013/postgres";
+
+export default defineConfig({
+	dialect: "postgresql",
+	schema: "./drizzle/schema.ts",
+	out: "./drizzle/migrations",
+	dbCredentials: { url },
+});
